@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>needlinux-demo</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4">
+    <meta name="author" content="naem azam at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/needlinux.png" alt="logo"><span class="logo-text">Need<span class="text-alt">Linux</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div>
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>    
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-linux fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-ubuntu fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+		            <a href="https://need-linux.github.io/learning/menu.html" class="btn btn-primary d-none d-lg-flex">Menu</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fab fa-ubuntu"></i></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">What is Garuda Linux?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Garuda Linux Features</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Why Do I Use Garuda Linux?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Which Edition Should I Download?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Before Installation</a></li>
+				    
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Installation Procedure</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Initial setup after downloading </a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Recommendations</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Adorable Tools</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">GUI</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">BTRFS Filesystem</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Garuda Gamer Tools</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-terminal"></i></span>Basic Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Trobleshooting</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Methods</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Try to solve it</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder mr-2"><i class="fas fa-laptop-code"></i></span>Devlopment</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder mr-2"><i class="fas fa-tablet-alt"></i></span>Top Uses</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Recovery Options</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Easy Software Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Awesome User Experience</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-4">Easy-to-Use Calamares Installer</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-book-reader"></i></span>Resources</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Books</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Gitlab</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Forum and community</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder mr-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+					
+				<header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2022-06-01</span></h1>
+	  <p>Linux is a community of open-source Unix like operating systems that are based on the Linux Kernel. It is a free and open-source operating system and the source code can be modified and distributed to anyone commercially or noncommercially under the GNU General Public License</p>
+	  <figure class="figure docs-figure py-3">
+		<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda.jpg.jpg" alt="" style="width: 900px;">
+	</figure>
+<section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">What is Garuda Linux?</h2>
+						<p>Garuda Linux is a Archlinux based distro which is focused on performance. It uses Linux-tkg-bmq kernel by default and comes with a variety of opiniated themes & settings.We only use one extra repo on top of Arch Linux repos, placing us very close to Arch Linux without having to install the system with CLI.</p>
+						Garuda Linux is a rolling release distro based on Arch Linux, which ensures always getting the latest software updates. 
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Garuda Linux Features</h2>
+						<p>
+							<li>Using the Zen kernel: It has faster speeds and faster response times due to optimization for everyday use in desktop, multimedia, and gaming. Its combination and use is the result of kernel hackers working together to provide the best Linux kernel for everyday operating systems. </li>
+							<li>Easy to use: Provides modern terminal applications (CLI), such as text editor, which is easy-to-use, intuitive terminal-based and is predefined in the operating system because it can take advantage of modern functional terminals. In addition, it provides a variety of GUI tools that can be configured with a ready-to-use land management system for easy start-up.</li>
+							<li>Always free: Its developers promise that Garuda Linux will always be completely free. Since then, they've created it as a free, open GNU/Linux-based operating system and, most importantly, easy to use, beautiful and delivers high performance.</li>
+							<li>Rolling Release: Garuda Linux is a rolling release distro based on Arch Linux, which ensures always getting the latest software updates.We only use one extra repo on top of Arch Linux repos, placing us very close to Arch Linux without having to install the system via command line.</li>
+						</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Why Do I Use Garuda Linux?</h2>
+						<p>To decide if Garuda is a good choice it might be good to see how it compares to other well known distributions!</p>
+						<div class="table-responsive my-4">
+							<table class="table table-bordered table-dark">
+								<thead>
+									<tr>
+										<th scope="col"></th>
+										<th scope="col">Garuda Linux</th>
+										<th scope="col">Manjaro Linux</th>
+										<th scope="col">Ubuntu</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">Package management</th>
+										<td>Pacman & Pamac</td>
+										<td>Pacman & Pamac</td>
+										<td>APT</td>
+									</tr>
+									<tr>
+										<th scope="row">Repository</th>
+										<td>Arch Repos + Chaotic AUR (precompiled) + AUR (need to compile)</td>
+										<td>Manjaro Repos (Arch + a bit of testing) + AUR (need to compile)</td>
+										<td>Ubuntu repos, missing well known software</td>
+									</tr>
+									<tr>
+										<th scope="row">Software</th>
+										<td>Most known software available by default (precompiled)</td>
+										<td>Many software installable via AUR (need to compile)</td>
+										<td>Software available via PPA (many different sources)</td>
+									</tr>
+									<tr>
+										<th scope="row">Software versions</th>
+										<td>Always the latest </td>
+										<td>New versions often a few weeks delayed </td>
+										<td>Well tested software but not the latest </td>
+									</tr>
+									<tr>
+										<th scope="row">Target audience</th>
+										<td>People who want a good out of the box experience with an opiniated set of applications and settings</td>
+										<td></td>
+										<td>People who want a stable environment with little changes - possible only due to freezing repos & reinstallation for new releases </td>
+									</tr>
+									<tr>
+										<th scope="row">Installation</th>
+										<td>Calamares offline installer </td>
+										<td>Calamares offline installer </td>
+										<td>Ubuntu installer </td>
+									</tr>
+									<tr>
+										<th scope="row">Desktop environments</th>
+										<td>KDE, Xfce, GNOME, LXQt-kwin, Wayfire, Qtile, BSPWM, i3wm and Sway.</td>
+										<td>XFCE, KDE, GNOME - Community: Budgie, Cinnamon, Deepin, i3wm, MATE, Sway</td>
+										<td>GNOME - Additional DEs available as different distributions, eg. Kubuntu</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--//table-responsive-->
+
+					</section>
+					
+					<section class="docs-section" id="item-1-4">
+						<h2 class="section-heading">Which Edition Should I Download?</h2>
+						<p>This release brings a variety of improvements, new features and updated components, including a large number of updates and improvements to applications and desktop environments
+						So Garuda Linux provides various desktop environments, such as KDE, GNOME, Xfce, Wayfire, LXQt-kwin and i3.
+						You can read the instructions below to learn more about each version and choose the best edition that suits youself.
+						</p>
+						<ul class="list list-unstyled pl-0">
+							<h3>Garuda KDE Dr460nized</h3>
+							<p>The dr460nized editions of Garuda Linux offer a dark, blurry and fully immersive Plasma experience. The workflow is mac-alike with the appmenu baked right into the top bar. 🐉</p>
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-dr460nized.webp" alt="" style="width: 600px;">
+							<h3>Garuda Xfce</h3>
+							<p>Xfce is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while still being visually appealing and user friendly.
+							</p>
+							<div class="callout-block callout-block-success">
+                               <div class="content">
+                                   <h4 class="callout-title">
+	                                   <span class="callout-icon-holder mr-1">
+		                                   <i class="fas fa-thumbs-up"></i>
+		                               </span><!--//icon-holder-->
+	                                   Tip
+	                               </h4>
+                                   <p>Xfce is well known for being a rock-solid & stable desktop environment.</p>
+                               </div><!--//content-->
+                            </div><!--//callout-block-->
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-xfce.webp" alt="" style="width: 600px;">
+							<li>
+
+							</li>
+							<h3>Garuda Linux GNOME</h3>
+							<p>GNOME is a modern desktop environment which is both clean and beautiful. It is focused on ease of use.</p>
+							
+                            <div class="callout-block callout-block-success">
+								<div class="content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder mr-1">
+											<i class="fas fa-thumbs-up"></i>
+										</span><!--//icon-holder-->
+										Tip
+									</h4>
+									<p>For Optimus laptops the GNOME edition uses Prime render offloading.</p>
+								</div><!--//content-->
+							</div><!--//callout-block-->
+						    
+
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-gnome.webp" alt="" style="width: 600px;">
+							<h3>Garuda LXQT-Kwin</h3>
+							<p>LXQt is a lightweight Qt desktop environment that does not get in your way. Its focus lays on being a lightweight, lagfree desktop with modern look and feel.</p>
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-lxqt-kwin.webp" alt="" style="width: 600px;">
+							<h3>Garuda Wayfire</h3>
+							<p>
+								Wayfire is a 3D Wayland compositor inspired by Compiz and based on wlroots. It aims to create a customizable, extendable and lightweight environment without sacrificing its appearance.
+							</p>
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-wayfire.webp" alt="" style="width: 600px;">
+							<h3>Garuda i3WM</h3>
+							<p>
+								I3-wm is a lightweight window manager that is operated exclusively with the keyboard. Our version has a simple and easy configuration with LXappearance to handle GTK themes. We do ship the configuration with an easy cheat sheet to get you started. Due to its light resources, it has a really small memory footprint.
+							</p>
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-i3.webp" alt="" style="width: 600px;">
+							
+						</ul>
+					</section>
+					
+					<section class="docs-section" id="item-1-5">
+						<h2 class="section-heading">Before Installation</h2>
+						<p>The hardware requirements might seem high at first but this is mostly due to Calamares taking a lot of RAM during installation and  some other performance enhancing applications used. For window managers the actual needed specs are lower than KDE requirements. A thumbdrive of 4GB is needed for regular versions while the gaming edition needs 8GB space.
+						</p>  
+						<p>KDE Dr460nized requirements:</p>	
+						<ul>
+							<p><strong class="mr-1">Minimum requirements:</strong></p> 
+						    <ul>
+								   <li>30 GB storage</li>
+								   <li>4 GB RAM</li>
+								   <li>Video card with OpenGL 3.3 or better</li>
+								   <li>64-bit system</li>
+						    </ul>
+						</ul>  
+						  <ul>
+							    <p><strong class="mr-1">Recommended requirements:</strong></p>
+							    <ul>
+								    <li>40 GB storage</li>
+								    <li>8 GB RAM</li>
+								    
+								</ul>
+						  </ul>
+                       
+					</section>
+					
+					<section class="docs-section" id="item-1-6">
+						<h2 class="section-heading">Section Item 1.6</h2>
+						<p></p>
+					</section>
+	
+				    <!--//section-->
+					
+			    </article>
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Installation</h1>
+					    <section class="docs-intro">
+						    <p>Below is the rough suggested installation procedure, a quite detailed video is available as well. If you are doing manual partitioning during the process it is advised to create the partitions with Gparted (find it in the start menu) prior to starting Calamares as it is a known problem that more complex partition layouts might not get created properly. If you have a MacBook pro, we have a dedicated wiki article which helps with the installation!</p>
+						   
+							   <div class="my-4">
+							      <ul class="list list-unstyled pl-0">
+								     <li>
+										 <a href="https://garudalinux.org/downloads.html" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Download Now</a>
+										 <a style="margin-left: 150px;"  href="https://www.youtube.com/watch?v=iBDIj-J3U28" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a>
+									     <a style="margin-left: 150px;"  href="https://wiki.garudalinux.org/en/MacBookPro-Installation-Instructions" class="btn btn-secondary"><i class="fas fa-book mr-2"></i> View Guide About MacBook pro</a>
+								     </li>
+							      </ul>
+						       </div>
+						
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Installation Procedure</h2>
+						<p>
+							<li>Boot the PC and press the manufacturers key to open the menus. </li>
+                            <li>Reset BIOS to factory default and reboot.</li>
+                            <li>Disable fastboot in BIOS settings.</li>
+                            <li>Go to security > secure Boot and disable secure boot in BIOS settings.</li>
+							<li> Make sure that SATA controller is set to AHCI mode in BIOS settings.</li>
+							<li>If your firmware supports UEFI then set your BIOS settings to UEFI only.</li>
+							<li>Create a bootable USB using DD/Etcher/Ventoy, if using Rufus make sure to use DD mode to flash the iso to usb.</li>
+						    <li>From the firmware menu boot to usb drive while in UEFI or BIOS mode:
+							You might see separate commands for the same device. For example, you might see UEFI USB Drive and BIOS USB drive. Each command uses the same device and media but boots the PC in a different firmware mode. We recommend to boot drive in UEFI mode if listed.</li>
+							<li>After booting live media start the installer and choose 'Erase Entire Disk' in the Calamares Installer.</li>
+						</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Initial setup after downloading </h2>
+						<p>The next initial setup after installing can make you proceed Garuda smoothly. Keep on reading! 😊</p>
+                        <ul>
+							<p>
+								<li>Getting the initial mirrorlist</li>
+								<p> This step and the following can both be completed interactively if the setup assistant. Just press yes to the “complete installation” prompt.</p>
+								<p> If you chose now you have two possibilities: either you open "Reflector Simple" found in the startmenu if you prefer using a GUI or you open the terminal and type upd. This will refresh your mirrorlist and update the system afterwards.</p> 
+							</p>
+						</ul>
+						<ul>
+							<p>
+								<li>Updating the system</li>
+								<p>Here you can chose between GUI and terminal again. For the first option you have to open Pamac (also called software update) click update. If you prefer the terminal it is as easy as typing: </p>
+								<p> <code>sudo pacman -Syu </code>(or <code>upd</code> if you want to refresh mirrors first)</p>  
+								<p>After a bigger update (especially if kernel versions changed) it is advised to reboot afterwards.</p>
+							</p>
+						</ul>
+						<ul>
+							<p>
+								<li>Downloading languagepacks</li>
+								<p>Some applications such as Firefox ship its language packs in separate packages. This makes installing them after the initial setup a needed step. This is however made simple by using the Garuda settings manager. Open it up and get your language packs!</p>
+								<img class="figure-img img-fluid shadow rounded" src="assets/images/language-packs.png" alt="" style="width: 600px;">
+							</p>
+						</ul>
+						<ul>
+							<p>
+								<li>Getting printing and scanning support, adblocking and more using the Garuda Welcome app</li>
+								<p>We made some settings easy for you and included them in the Garuda Welcome app. Here they can be turned on and off by toggling. To get an overview on the current available settings, have a look:
+								</p>
+								<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-welcome-home.png" alt="" style="width: 400px;">
+							</p>
+						</ul>
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Recommendations</h2>
+						<p>
+							If you want to know how to install & setup Garuda Linux ,you should watch this short tutorial.
+						</p>
+						<ul class="list list-unstyled pl-0">
+							<li>
+								<a href="https://www.youtube.com/watch?v=JYsL5J5vVC4" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a>
+							</li>
+
+						</ul>
+
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Adorable Tools</h1>
+					    <section class="docs-intro">
+						    <p>One feature that makes Garuda wildly popular is that it provides a simple graphical utility for managing the system and performing administrative tasks and
+								a modern, Copy-on-Write (CoW) filesystem with zstd compression for Linux, aimed at implementing advanced features while also focusing on fault tolerance, repair and easy administration. 
+								
+							</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">GUI</h2>
+						<p>
+							Garuda Linux is a rolling distribution based on arch Linux, focusing only on performance. But unlike arch, it comes with a graphical calamares installer and other advanced GUI tools.
+						</p>
+						<ul class="list list-unstyled pl-0">
+							<h4>GUI for managing drivers and kernels (Garuda Settings Manager)</h4>
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-settings-manager.webp" alt="" style="width: 600px;">
+							
+							<h4>GUI tool for various common tasks (Garuda Assistant)</h4>
+							<p>This tool allows users to manage repositories, clear logs, back up the system, manage the filesystem and systemd processes in simple clicks.</p>
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/gui.png" alt="" style="width: 600px;">
+                            <h4>GUI for GRUB boot options (Garuda Boot Options)</h4>
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-boot-options.webp" alt="" style="width: 600px;">
+							<h4>GUI for network assistance & hotspot creation (Garuda Network Assistant)</h4>
+                            <img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-network-manager.webp" alt="" style="width: 600px;">
+							<Li></Li>
+						</ul>
+
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">BTRFS as the default filesystem with zstd compression</h2>
+						<p>Garuda Linux uses the B-Tree filesystem (BTRFS) as the default. BTRFS addresses various Linux filesystem limitations like checksums, pooling, and snapshots. It also allows for easy management, fault tolerance, and repairs.
+							Btrfs also provides Garuda Linux with the ability to perform self-healing by using checksums and metadata to detect and repair corrupted data. Therefore, Garuda Linux having BTRFS is a considerable advantage.
+						</p>
+						<img class="figure-img img-fluid shadow rounded" src="assets/images/Btrfs.png" alt="" style="width: 600px;">
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Garuda Gamer Tools</h2>
+				
+							<p>Garuda Linux has a Gaming edition (GUI for installing curated gaming software), a KDE version of Garuda Linux tuned for gamers. This Gaming edition has all the software a gamer might need. The pre-installed gaming software in the gaming edition of Garuda Linux includes Steam, Gamehub, Boxtron, WINE, Proton GE custom, Gamemode, vkBasalt, itch, Lutris, Minigalaxy, Heroic Game Launcher, Oversteer, and SteamTinterLaunch.
+								It also comes with gaming tools such as OpenRGB, KeyboardVisualizer, DisplayCAL, NoiseTorch, Discord, Mumble, Piper, and CoreCtrl.</p>
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/garuda-gamer.webp" alt="" style="width: 600px;">
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Basic Commands</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Section Item 4.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Section Item 4.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Trobleshooting</h1>
+					    <section class="docs-intro">
+						    <p>if your Computer doesn’t boot, boots to a black screen, or stops at a message,take it ease and read this Trobleshooting guide.
+							</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">Methods</h2>
+						<p>While there are many potential reasons why your installation doesn’t boot to a desktop, the primary reason is that the graphics drivers haven’t loaded correctly so your login/display manager (DM) doesn’t start. This is why you get a "black screen" or stuck at an</p>
+						<p><code>[    OK    ] Started some service</code></p>
+						<p>message.</p>
+						
+						
+						<p>
+						   The normal reason for this is that you have the incorrect driver version for the kernel. This can happens when the mirror you are updating from is not fully synchronised, or times out, and so you have different sets of packages in [<code>core</code>]and [<code>extra</code>]. This means the driver module package in [<code>extra</code>] has been built for a different kernel point-release to that in [<code>core</code>] .<strong class="mr-1">On the other hand, if you have a DKMS driver package then make sure the build succeeded!</strong> 
+						</p>
+						<p></p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Try to solve it</h2>
+						<ul>
+							<h3 class="badge badge-danger">The first thing to try</h3>
+							<p>Switch to a text console with <span class="badge badge-dark">CTRL</span>+<span class="badge badge-dark">ALT</span>+<span class="badge badge-dark">F2</span> , log in with your normal username and password, then run a full update:</p>
+							<p><code>sudo reflector -a6 -f5 --save /etc/pacman.d/mirrorlist</code></p>
+							<p><code>sudo pacman -Syyu</code></p>
+							<p>The first command will refresh your mirror list, picking five of the most recently updated mirrors (so those mirrors will all be up-to-date).</p>
+							<p>The second command will force a download of the current package lists, then perform an update if any updated packages are available.</p>
+							<p>If any packages were updated, reboot.</p>
+							<div class="callout-block callout-block-info">
+                            
+								<div class="content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder mr-1">
+											<i class="fas fa-info-circle"></i>
+										</span><!--//icon-holder-->
+										Note
+									</h4>
+									<p> If you can’t log in to a text console, use a <a href="https://endeavouros.com/docs/system-rescue/rescue-non-booting-system-with-arch-chroot/">chroot </a> 46 instead.</p>
+								</div><!--//content-->
+							</div><!--//callout-block-->
+						</ul>
+						<ul>
+							<h3 class="badge badge-warning">
+								<span class="callout-icon-holder mr-1">
+									
+								</span><!--//icon-holder-->
+								The second thing to try
+							</h3>
+							<p>Log into a text console as above and run startx . This should either start X, in which case the issue lies with your Display Manager (e.g. GDM, LightDM, SDDM), OR you will be presented with some output and returned to the console. Of particular interest are Error (EE) lines.</p>
+
+						</ul>
+						<ul>
+
+						</ul>
+						<ul>
+							<h3 class="badge badge-info">The DKMS thing to try</h3>
+							<p>Run</p>
+							<p><code>sudo dkms autoinstall</code></p>
+							<p>
+								and pay attention to the build completion status. If it says the build failed then check the associated log file (it will tell you a file location).
+							</p>
+
+						</ul>
+						<ul>
+							<h3 class="badge badge-primary">If you can’t see anything obvious</h3>
+							<p>If none of the above helps fix this issue (which the first one will in 90% of cases) then search all Arch OS related forums for recent issues (<a href="https://forum.garudalinux.org/search?q=black%20screen">Search results for 'black screen' - Garuda Linux Forum</a>) , and, if you can’t find anything, start a new thread mentioning what you have already tried.</p>
+						</ul>
+
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-3">
+							<h2 class="section-heading">Section Item 5.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+		        <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Devlopment</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Section Item 6.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Section Item 6.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-3">
+							<h2 class="section-heading">Section Item 6.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Top Uses</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-7-1">
+						<h2 class="section-heading">Recovery Options</h2>
+						<p>As a rolling release, Garuda Linux updates software packages daily. Unfortunately, doing such updates might cause your system to break, making it inoperable.</p>
+						<p>
+						   To mitigate this, Garuda Linux has an inbuilt Timeshift backup utility that allows you to take snapshots of your system. In addition, Garuda gives you access to the system snapshots straight from GRUB, which can prove immensely helpful in cases where the system fails to boot up successfully.
+						</p>
+						<img class="figure-img img-fluid shadow rounded" src="assets/images/timeshift.webp" alt="" style="width: 600px;">
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-2">
+						<h2 class="section-heading">Easy Software Installation</h2>
+						<p>
+							Installing software packages on Garuda Linux is as simple as it can get. The distro uses the Pacman installer and a collection of software packages from the default repositories.
+Garuda Linux also imports the Pamac installer from Manjaro Linux, allowing you to install software packages without touching the terminal.
+Garuda Linux also offers support for Snap and Flatpack and comes with the Arch User Repository enabled by default.
+NOTE: Although supported, Garuda Linux does not recommend using Snap packages.
+						</p>
+						<img class="figure-img img-fluid shadow rounded" src="assets/images/top-uses-1.png" alt="" style="width: 600px;">
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-3">
+							<h2 class="section-heading">Awesome User Experience</h2>
+						<p>Once you install Garuda Linux, a welcome screen will greet you with a warm and straightforward message welcoming you to Garuda Linux. This screen also gives you the option of using the setup assistant to configure your system for the first time.
+							Garuda Linux provides rich UI features with familiar navigation menus and icons. As a result, exploring Garuda Linux is straightforward.
+							Depending on the flavor of Garuda Linux you install, you will get typical applications such as Firefox web browser, VLC media player, a terminal, GIMP, Steam, Timeshift Backup utility, and Software Market pre-installed.
+							The default username and password are Garuda and Garuda, respectively.</p>
+							<img class="figure-img img-fluid shadow rounded" src="assets/images/top-uses-2.png" alt="" style="width: 600px;">
+					</section><!--//section-->
+
+
+					<section class="docs-section" id="item-7-4">
+						<h2 class="section-heading">Easy-to-Use Calamares Installer</h2>
+					<p>Although Garuda Linux is an Arch-Linux-based distro, it uses the Calamares installer, which removes the complexity and time-consuming procedure of installing Arch-based distributions</p>
+						<img class="figure-img img-fluid shadow rounded" src="assets/images/top-uses-3.png" alt="" style="width: 600px;">
+				</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-8">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Resources</h1>
+					    <section class="docs-intro">
+						    <p></p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-8-1">
+						<h2 class="section-heading">Books</h2>
+						<p></p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-8-2">
+						<h2 class="section-heading">Gitlab</h2>
+						
+						<ul class="list list-unstyled pl-0">
+                            Garuda Linux has its own gitlab including Website, packages and settings, so you can view it to find what you need or want. 
+							<li><a href="https://gitlab.com/garuda-linux" class="btn btn-light"><i class="fas fa-arrow-alt-circle-right mr-2"></i> View Website</a></li>
+						</ul>	
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-8-3">
+							<h2 class="section-heading">Forum and Community</h2>
+						<ul class="list list-unstyled pl-0">
+							You can solve your puzzles about Garuda linux through the Forum and chat for a while in the Garuda Linux community.
+                            <li><a href="https://forum.garudalinux.org" class="btn btn-light"><i class="fas fa-arrow-alt-circle-right mr-2"></i> View Forum</a></li>
+						</ul>
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-9">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. You can list all your FAQs using the format below.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-9-1">
+						<h2 class="section-heading">Garuda Linux General FAQ</h2>
+						<p>The Website is the official thread for Garuda Linux FAQ. </p>
+						<ul class="list list-unstyled pl-0"></ul>
+						   <a href="https://forum.garudalinux.org/t/garuda-linux-general-faq/318" class="btn btn-light"><i class="fas fa-arrow-alt-circle-right mr-2"></i> View it </a>
+					    </ul>   
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-9-2">
+						<h2 class="section-heading">Configuration,Settings, Installation etc </h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to easily create a bootable USB to install Garuda?</h5>
+						<p><a href="https://forum.garudalinux.org/t/how-to-easily-create-a-bootable-usb-to-install-garuda/2959" class="btn btn-light"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Answer </a></p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to fully use Intel hardware ?</h5>
+						<p>This <a href="https://forum.garudalinux.org/t/how-to-fully-use-intel-hardware-guide/8193" class="btn btn-light"><i class="fas fa-arrow-alt-circle-right mr-2"></i>guide</a> can help you.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to chroot Garuda Linux?</h5>
+						<a href="https://forum.garudalinux.org/t/how-to-chroot-garuda-linux/4004" class="btn btn-secondary"><i class="fas fa-book mr-2"></i>View Guide</a>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to fix system time when dual booting with Window? </h5>
+						<p>Read and adjust as you prefer. It is suggested to configure Windows time to UTC.</p>
+						<a href="https://wiki.archlinux.org/title/System_time#UTC_in_Windows" class="btn btn-light"><i class="fas fa-arrow-alt-circle-right mr-2"></i>System time </a>
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-9-3">
+							<h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
+						    <h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How to dapibus sollicitudin justo vel fermentum?</h5>
+							<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+							<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How long bibendum sodales?</h5>
+							<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+							<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Where dapibus sollicitudin?</h5>
+							<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://naemazam.github.io" target="_blank">Mark Ming</a> for developers</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
